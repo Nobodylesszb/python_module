@@ -1,0 +1,78 @@
+2019-06-11 10:51:46 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2019-06-11 10:51:46 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2019-06-11 10:51:46 base.py[line:881] INFO Added job "date_test" to job store "default"
+2019-06-11 10:51:46 base.py[line:881] INFO Added job "aps_test" to job store "default"
+2019-06-11 10:51:46 base.py[line:166] INFO Scheduler started
+2019-06-11 10:51:49 base.py[line:123] INFO Running job "aps_test (trigger: interval[0:00:03], next run at: 2019-06-11 10:51:49 CST)" (scheduled at 2019-06-11 10:51:49.130198+08:00)
+2019-06-11 10:51:49 base.py[line:144] INFO Job "aps_test (trigger: interval[0:00:03], next run at: 2019-06-11 10:51:52 CST)" executed successfully
+2019-06-11 10:51:52 base.py[line:123] INFO Running job "aps_test (trigger: interval[0:00:03], next run at: 2019-06-11 10:51:52 CST)" (scheduled at 2019-06-11 10:51:52.130198+08:00)
+2019-06-11 10:51:52 base.py[line:144] INFO Job "aps_test (trigger: interval[0:00:03], next run at: 2019-06-11 10:51:55 CST)" executed successfully
+2019-06-11 10:51:55 base.py[line:123] INFO Running job "aps_test (trigger: interval[0:00:03], next run at: 2019-06-11 10:51:55 CST)" (scheduled at 2019-06-11 10:51:55.130198+08:00)
+2019-06-11 10:51:55 base.py[line:144] INFO Job "aps_test (trigger: interval[0:00:03], next run at: 2019-06-11 10:51:58 CST)" executed successfully
+2019-06-11 10:51:58 base.py[line:123] INFO Running job "aps_test (trigger: interval[0:00:03], next run at: 2019-06-11 10:51:58 CST)" (scheduled at 2019-06-11 10:51:58.130198+08:00)
+2019-06-11 10:51:58 base.py[line:144] INFO Job "aps_test (trigger: interval[0:00:03], next run at: 2019-06-11 10:52:01 CST)" executed successfully
+2019-06-11 10:52:01 base.py[line:123] INFO Running job "date_test (trigger: date[2019-06-11 10:51:46 CST], next run at: 2019-06-11 10:52:01 CST)" (scheduled at 2019-06-11 10:52:01.097198+08:00)
+2019-06-11 10:52:01 base.py[line:627] INFO Removed job date_task
+2019-06-11 10:52:01 base.py[line:131] ERROR Job "date_test (trigger: date[2019-06-11 10:51:46 CST], next run at: 2019-06-11 10:52:01 CST)" raised an exception
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File ".\error_log.py", line 20, in date_test
+    print (1/0)
+ZeroDivisionError: division by zero
+2019-06-11 10:52:01 base.py[line:123] INFO Running job "aps_test (trigger: interval[0:00:03], next run at: 2019-06-11 10:52:01 CST)" (scheduled at 2019-06-11 10:52:01.130198+08:00)
+2019-06-11 10:52:01 base.py[line:144] INFO Job "aps_test (trigger: interval[0:00:03], next run at: 2019-06-11 10:52:04 CST)" executed successfully
+2019-06-11 10:52:04 base.py[line:123] INFO Running job "aps_test (trigger: interval[0:00:03], next run at: 2019-06-11 10:52:04 CST)" (scheduled at 2019-06-11 10:52:04.130198+08:00)
+2019-06-11 10:52:04 base.py[line:144] INFO Job "aps_test (trigger: interval[0:00:03], next run at: 2019-06-11 10:52:07 CST)" executed successfully
+2019-06-11 10:52:07 base.py[line:123] INFO Running job "aps_test (trigger: interval[0:00:03], next run at: 2019-06-11 10:52:07 CST)" (scheduled at 2019-06-11 10:52:07.130198+08:00)
+2019-06-11 10:52:07 base.py[line:144] INFO Job "aps_test (trigger: interval[0:00:03], next run at: 2019-06-11 10:52:10 CST)" executed successfully
+2019-06-11 10:52:10 base.py[line:123] INFO Running job "aps_test (trigger: interval[0:00:03], next run at: 2019-06-11 10:52:10 CST)" (scheduled at 2019-06-11 10:52:10.130198+08:00)
+2019-06-11 10:52:10 base.py[line:144] INFO Job "aps_test (trigger: interval[0:00:03], next run at: 2019-06-11 10:52:13 CST)" executed successfully
+2019-06-11 10:52:13 base.py[line:123] INFO Running job "aps_test (trigger: interval[0:00:03], next run at: 2019-06-11 10:52:13 CST)" (scheduled at 2019-06-11 10:52:13.130198+08:00)
+2019-06-11 10:52:13 base.py[line:144] INFO Job "aps_test (trigger: interval[0:00:03], next run at: 2019-06-11 10:52:16 CST)" executed successfully
+2019-06-11 10:52:16 base.py[line:123] INFO Running job "aps_test (trigger: interval[0:00:03], next run at: 2019-06-11 10:52:19 CST)" (scheduled at 2019-06-11 10:52:16.130198+08:00)
+2019-06-11 10:52:16 base.py[line:144] INFO Job "aps_test (trigger: interval[0:00:03], next run at: 2019-06-11 10:52:19 CST)" executed successfully
+2019-06-11 10:52:19 base.py[line:123] INFO Running job "aps_test (trigger: interval[0:00:03], next run at: 2019-06-11 10:52:22 CST)" (scheduled at 2019-06-11 10:52:19.130198+08:00)
+2019-06-11 10:52:19 base.py[line:144] INFO Job "aps_test (trigger: interval[0:00:03], next run at: 2019-06-11 10:52:22 CST)" executed successfully
+2019-06-11 10:52:22 base.py[line:123] INFO Running job "aps_test (trigger: interval[0:00:03], next run at: 2019-06-11 10:52:25 CST)" (scheduled at 2019-06-11 10:52:22.130198+08:00)
+2019-06-11 10:52:22 base.py[line:144] INFO Job "aps_test (trigger: interval[0:00:03], next run at: 2019-06-11 10:52:25 CST)" executed successfully
+2019-06-11 10:52:25 base.py[line:123] INFO Running job "aps_test (trigger: interval[0:00:03], next run at: 2019-06-11 10:52:28 CST)" (scheduled at 2019-06-11 10:52:25.130198+08:00)
+2019-06-11 10:52:25 base.py[line:144] INFO Job "aps_test (trigger: interval[0:00:03], next run at: 2019-06-11 10:52:28 CST)" executed successfully
+2019-06-11 10:52:28 base.py[line:123] INFO Running job "aps_test (trigger: interval[0:00:03], next run at: 2019-06-11 10:52:31 CST)" (scheduled at 2019-06-11 10:52:28.130198+08:00)
+2019-06-11 10:52:28 base.py[line:144] INFO Job "aps_test (trigger: interval[0:00:03], next run at: 2019-06-11 10:52:31 CST)" executed successfully
+2019-06-11 10:52:31 base.py[line:123] INFO Running job "aps_test (trigger: interval[0:00:03], next run at: 2019-06-11 10:52:34 CST)" (scheduled at 2019-06-11 10:52:31.130198+08:00)
+2019-06-11 10:52:31 base.py[line:144] INFO Job "aps_test (trigger: interval[0:00:03], next run at: 2019-06-11 10:52:34 CST)" executed successfully
+2019-06-11 10:52:34 base.py[line:123] INFO Running job "aps_test (trigger: interval[0:00:03], next run at: 2019-06-11 10:52:37 CST)" (scheduled at 2019-06-11 10:52:34.130198+08:00)
+2019-06-11 10:52:34 base.py[line:144] INFO Job "aps_test (trigger: interval[0:00:03], next run at: 2019-06-11 10:52:37 CST)" executed successfully
+2019-06-11 10:52:37 base.py[line:123] INFO Running job "aps_test (trigger: interval[0:00:03], next run at: 2019-06-11 10:52:40 CST)" (scheduled at 2019-06-11 10:52:37.130198+08:00)
+2019-06-11 10:52:37 base.py[line:144] INFO Job "aps_test (trigger: interval[0:00:03], next run at: 2019-06-11 10:52:40 CST)" executed successfully
+2019-06-11 10:52:40 base.py[line:123] INFO Running job "aps_test (trigger: interval[0:00:03], next run at: 2019-06-11 10:52:43 CST)" (scheduled at 2019-06-11 10:52:40.130198+08:00)
+2019-06-11 10:52:40 base.py[line:144] INFO Job "aps_test (trigger: interval[0:00:03], next run at: 2019-06-11 10:52:43 CST)" executed successfully
+2019-06-11 10:52:43 base.py[line:123] INFO Running job "aps_test (trigger: interval[0:00:03], next run at: 2019-06-11 10:52:46 CST)" (scheduled at 2019-06-11 10:52:43.130198+08:00)
+2019-06-11 10:52:43 base.py[line:144] INFO Job "aps_test (trigger: interval[0:00:03], next run at: 2019-06-11 10:52:46 CST)" executed successfully
+2019-06-11 10:52:46 base.py[line:123] INFO Running job "aps_test (trigger: interval[0:00:03], next run at: 2019-06-11 10:52:49 CST)" (scheduled at 2019-06-11 10:52:46.130198+08:00)
+2019-06-11 10:52:46 base.py[line:144] INFO Job "aps_test (trigger: interval[0:00:03], next run at: 2019-06-11 10:52:49 CST)" executed successfully
+2019-06-11 10:52:49 base.py[line:123] INFO Running job "aps_test (trigger: interval[0:00:03], next run at: 2019-06-11 10:52:52 CST)" (scheduled at 2019-06-11 10:52:49.130198+08:00)
+2019-06-11 10:52:49 base.py[line:144] INFO Job "aps_test (trigger: interval[0:00:03], next run at: 2019-06-11 10:52:52 CST)" executed successfully
+2019-06-11 10:52:52 base.py[line:123] INFO Running job "aps_test (trigger: interval[0:00:03], next run at: 2019-06-11 10:52:55 CST)" (scheduled at 2019-06-11 10:52:52.130198+08:00)
+2019-06-11 10:52:52 base.py[line:144] INFO Job "aps_test (trigger: interval[0:00:03], next run at: 2019-06-11 10:52:55 CST)" executed successfully
+2019-06-11 10:52:55 base.py[line:123] INFO Running job "aps_test (trigger: interval[0:00:03], next run at: 2019-06-11 10:52:58 CST)" (scheduled at 2019-06-11 10:52:55.130198+08:00)
+2019-06-11 10:52:55 base.py[line:144] INFO Job "aps_test (trigger: interval[0:00:03], next run at: 2019-06-11 10:52:58 CST)" executed successfully
+2019-06-11 10:52:58 base.py[line:123] INFO Running job "aps_test (trigger: interval[0:00:03], next run at: 2019-06-11 10:53:01 CST)" (scheduled at 2019-06-11 10:52:58.130198+08:00)
+2019-06-11 10:52:58 base.py[line:144] INFO Job "aps_test (trigger: interval[0:00:03], next run at: 2019-06-11 10:53:01 CST)" executed successfully
+2019-06-11 10:53:01 base.py[line:123] INFO Running job "aps_test (trigger: interval[0:00:03], next run at: 2019-06-11 10:53:04 CST)" (scheduled at 2019-06-11 10:53:01.130198+08:00)
+2019-06-11 10:53:01 base.py[line:144] INFO Job "aps_test (trigger: interval[0:00:03], next run at: 2019-06-11 10:53:04 CST)" executed successfully
+2019-06-11 10:53:04 base.py[line:123] INFO Running job "aps_test (trigger: interval[0:00:03], next run at: 2019-06-11 10:53:07 CST)" (scheduled at 2019-06-11 10:53:04.130198+08:00)
+2019-06-11 10:53:04 base.py[line:144] INFO Job "aps_test (trigger: interval[0:00:03], next run at: 2019-06-11 10:53:07 CST)" executed successfully
+2019-06-11 10:53:07 base.py[line:123] INFO Running job "aps_test (trigger: interval[0:00:03], next run at: 2019-06-11 10:53:10 CST)" (scheduled at 2019-06-11 10:53:07.130198+08:00)
+2019-06-11 10:53:07 base.py[line:144] INFO Job "aps_test (trigger: interval[0:00:03], next run at: 2019-06-11 10:53:10 CST)" executed successfully
+2019-06-11 10:53:10 base.py[line:123] INFO Running job "aps_test (trigger: interval[0:00:03], next run at: 2019-06-11 10:53:13 CST)" (scheduled at 2019-06-11 10:53:10.130198+08:00)
+2019-06-11 10:53:10 base.py[line:144] INFO Job "aps_test (trigger: interval[0:00:03], next run at: 2019-06-11 10:53:13 CST)" executed successfully
+2019-06-11 10:53:13 base.py[line:123] INFO Running job "aps_test (trigger: interval[0:00:03], next run at: 2019-06-11 10:53:16 CST)" (scheduled at 2019-06-11 10:53:13.130198+08:00)
+2019-06-11 10:53:13 base.py[line:144] INFO Job "aps_test (trigger: interval[0:00:03], next run at: 2019-06-11 10:53:16 CST)" executed successfully
+2019-06-11 10:53:16 base.py[line:123] INFO Running job "aps_test (trigger: interval[0:00:03], next run at: 2019-06-11 10:53:19 CST)" (scheduled at 2019-06-11 10:53:16.130198+08:00)
+2019-06-11 10:53:16 base.py[line:144] INFO Job "aps_test (trigger: interval[0:00:03], next run at: 2019-06-11 10:53:19 CST)" executed successfully
+2019-06-11 10:53:19 base.py[line:123] INFO Running job "aps_test (trigger: interval[0:00:03], next run at: 2019-06-11 10:53:22 CST)" (scheduled at 2019-06-11 10:53:19.130198+08:00)
+2019-06-11 10:53:19 base.py[line:144] INFO Job "aps_test (trigger: interval[0:00:03], next run at: 2019-06-11 10:53:22 CST)" executed successfully
+2019-06-11 10:53:22 base.py[line:123] INFO Running job "aps_test (trigger: interval[0:00:03], next run at: 2019-06-11 10:53:25 CST)" (scheduled at 2019-06-11 10:53:22.130198+08:00)
+2019-06-11 10:53:22 base.py[line:144] INFO Job "aps_test (trigger: interval[0:00:03], next run at: 2019-06-11 10:53:25 CST)" executed successfully
